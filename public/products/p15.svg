@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F7F4EF" />
+      <stop offset="100%" stop-color="#EBE5DC" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1C1A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Subtle atelier frame -->
+  <rect x="16" y="16" width="368" height="368" fill="none" stroke="#E6DFD5" stroke-width="1" />
+
+  <!-- Pedestal glow -->
+  <ellipse cx="200" cy="330" rx="90" ry="14" fill="#1E1C1A" opacity="0.05" />
+
+  <!-- Garment Graphic -->
+  <g filter="url(#shadow)">
+    
+        <!-- Loafers Silhouette -->
+        <g transform="translate(10, 40)">
+          <!-- Heel & Sole -->
+          <path d="M100 215 L100 235 L135 235 L135 225 L245 225 C280 225 295 215 300 205 L300 220 C290 228 260 232 220 232 L100 232 Z" fill="#2C2018" stroke="#3C2C20" stroke-width="2"/>
+          <!-- Upper -->
+          <path d="M102 215 C110 185 140 175 175 175 C210 175 240 180 275 195 C295 202 298 208 298 212 L102 215 Z" fill="#523E2F" stroke="#3C2C20" stroke-width="2"/>
+          <!-- Penny Strap -->
+          <rect x="180" y="176" width="30" height="16" rx="3" fill="#3C2C20" stroke="#1A120D" stroke-width="1.5"/>
+          <ellipse cx="195" cy="184" rx="8" ry="2.5" fill="#1A120D"/>
+        </g>
+      
+  </g>
+
+  <!-- Subtle Brand Watermark -->
+  <text x="200" y="372" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#A8A196">SARTORIAL LAB</text>
+</svg>

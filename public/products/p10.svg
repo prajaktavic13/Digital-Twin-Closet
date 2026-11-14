@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F7F4EF" />
+      <stop offset="100%" stop-color="#EBE5DC" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1C1A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Subtle atelier frame -->
+  <rect x="16" y="16" width="368" height="368" fill="none" stroke="#E6DFD5" stroke-width="1" />
+
+  <!-- Pedestal glow -->
+  <ellipse cx="200" cy="330" rx="90" ry="14" fill="#1E1C1A" opacity="0.05" />
+
+  <!-- Garment Graphic -->
+  <g filter="url(#shadow)">
+    
+        <!-- Bomber Jacket Silhouette -->
+        <path d="M130 110 L165 125 L235 125 L270 110 L292 180 L260 192 L250 270 L150 270 L140 192 L108 180 Z" fill="#242121" stroke="#151313" stroke-width="2" />
+        <!-- Ribbed Collar -->
+        <path d="M165 125 Q200 142 235 125" fill="none" stroke="#151313" stroke-width="6" stroke-linecap="round"/>
+        <!-- Metal zipper -->
+        <line x1="200" y1="135" x2="200" y2="270" stroke="#C4976A" stroke-width="2.5"/>
+        <!-- Ribbed hem -->
+        <rect x="150" y="260" width="100" height="10" fill="#151313" opacity="0.8"/>
+        <!-- Slanted pockets -->
+        <line x1="160" y1="210" x2="175" y2="235" stroke="#151313" stroke-width="2.5"/>
+        <line x1="240" y1="210" x2="225" y2="235" stroke="#151313" stroke-width="2.5"/>
+      
+  </g>
+
+  <!-- Subtle Brand Watermark -->
+  <text x="200" y="372" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#A8A196">ÉTOILE STUDIO</text>
+</svg>

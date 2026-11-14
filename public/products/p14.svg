@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F7F4EF" />
+      <stop offset="100%" stop-color="#EBE5DC" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1C1A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Subtle atelier frame -->
+  <rect x="16" y="16" width="368" height="368" fill="none" stroke="#E6DFD5" stroke-width="1" />
+
+  <!-- Pedestal glow -->
+  <ellipse cx="200" cy="330" rx="90" ry="14" fill="#1E1C1A" opacity="0.05" />
+
+  <!-- Garment Graphic -->
+  <g filter="url(#shadow)">
+    
+        <!-- Sneakers Silhouette -->
+        <g transform="translate(10, 40)">
+          <!-- Sole -->
+          <path d="M100 220 C100 220 120 225 240 225 C275 225 295 215 300 205 L300 228 C290 236 260 240 220 240 L110 240 C95 240 92 228 100 220 Z" fill="#E2DDD5" stroke="#D3CCC1" stroke-width="2"/>
+          <!-- Upper -->
+          <path d="M105 218 C115 190 145 180 180 180 L210 160 C230 160 245 180 270 190 C290 198 298 205 298 208 L105 218 Z" fill="#F2EFEB" stroke="#D3CCC1" stroke-width="2"/>
+          <!-- Laces & Tongue -->
+          <line x1="195" y1="175" x2="215" y2="185" stroke="#D3CCC1" stroke-width="2"/>
+          <line x1="202" y1="183" x2="222" y2="193" stroke="#D3CCC1" stroke-width="2"/>
+          <line x1="209" y1="191" x2="229" y2="201" stroke="#D3CCC1" stroke-width="2"/>
+          <!-- Toe box curve -->
+          <path d="M255 195 C275 200 288 208 288 212" fill="none" stroke="#D3CCC1" stroke-width="1.5"/>
+        </g>
+      
+  </g>
+
+  <!-- Subtle Brand Watermark -->
+  <text x="200" y="372" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#A8A196">STEP STUDIO</text>
+</svg>

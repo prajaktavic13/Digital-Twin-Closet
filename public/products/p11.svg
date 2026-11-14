@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F7F4EF" />
+      <stop offset="100%" stop-color="#EBE5DC" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1C1A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Subtle atelier frame -->
+  <rect x="16" y="16" width="368" height="368" fill="none" stroke="#E6DFD5" stroke-width="1" />
+
+  <!-- Pedestal glow -->
+  <ellipse cx="200" cy="330" rx="90" ry="14" fill="#1E1C1A" opacity="0.05" />
+
+  <!-- Garment Graphic -->
+  <g filter="url(#shadow)">
+    
+        <!-- Blazer Silhouette -->
+        <path d="M130 102 L168 116 L232 116 L270 102 L290 185 L260 195 L252 285 L148 285 L140 195 L110 185 Z" fill="#232A39" stroke="#161B26" stroke-width="2" />
+        <!-- Peaked Lapels -->
+        <polygon points="168,116 205,175 185,185 140,132" fill="#161B26" opacity="0.75"/>
+        <polygon points="232,116 195,175 215,185 260,132" fill="#161B26" opacity="0.75"/>
+        <!-- Double Breasted Buttons -->
+        <circle cx="190" cy="195" r="3.5" fill="#C4976A"/>
+        <circle cx="210" cy="195" r="3.5" fill="#C4976A"/>
+        <circle cx="190" cy="225" r="3.5" fill="#C4976A"/>
+        <circle cx="210" cy="225" r="3.5" fill="#C4976A"/>
+        <!-- Flap Pockets -->
+        <rect x="148" y="235" width="28" height="6" fill="#161B26"/>
+        <rect x="224" y="235" width="28" height="6" fill="#161B26"/>
+      
+  </g>
+
+  <!-- Subtle Brand Watermark -->
+  <text x="200" y="372" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#A8A196">SARTORIAL LAB</text>
+</svg>

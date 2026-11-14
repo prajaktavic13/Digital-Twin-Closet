@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F7F4EF" />
+      <stop offset="100%" stop-color="#EBE5DC" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1C1A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Subtle atelier frame -->
+  <rect x="16" y="16" width="368" height="368" fill="none" stroke="#E6DFD5" stroke-width="1" />
+
+  <!-- Pedestal glow -->
+  <ellipse cx="200" cy="330" rx="90" ry="14" fill="#1E1C1A" opacity="0.05" />
+
+  <!-- Garment Graphic -->
+  <g filter="url(#shadow)">
+    
+        <!-- Jeans Silhouette -->
+        <path d="M150 110 L250 110 L255 288 L216 288 L200 170 L184 288 L145 288 Z" fill="#7C93AE" stroke="#637A95" stroke-width="2" />
+        <!-- Waistband -->
+        <line x1="150" y1="126" x2="250" y2="126" stroke="#C4976A" stroke-width="2"/>
+        <!-- Fly & Button -->
+        <line x1="200" y1="126" x2="200" y2="160" stroke="#C4976A" stroke-width="2"/>
+        <circle cx="200" cy="118" r="3.5" fill="#C4976A"/>
+        <!-- Curved Jeans pockets -->
+        <path d="M152 132 Q175 135 178 155" fill="none" stroke="#C4976A" stroke-width="1.5"/>
+        <path d="M248 132 Q225 135 222 155" fill="none" stroke="#C4976A" stroke-width="1.5"/>
+        <!-- Subtle distress wash highlight -->
+        <ellipse cx="178" cy="205" rx="10" ry="25" fill="#FFF" opacity="0.12"/>
+        <ellipse cx="222" cy="205" rx="10" ry="25" fill="#FFF" opacity="0.12"/>
+      
+  </g>
+
+  <!-- Subtle Brand Watermark -->
+  <text x="200" y="372" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#A8A196">DENIM ARCHIVE</text>
+</svg>
